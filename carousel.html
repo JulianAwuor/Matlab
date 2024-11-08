@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing Carousel</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+    <style>
+      .carousel-item img{
+        height: 500px;
+        object-fit: cover;
+      }
+      .price{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: yellow;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="container-sm mt-5 px-5 bg-warning-subtle p-5 rounded-5 shadow-lg">
+      <div id="clothingCarousel" class="carousel slide mx-5" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="/img/hoodie.jpeg" alt="cozy hoodie" class="w-100 rounded-5">
+
+            <div class="carousel-caption bg-black bg-opacity-50 rounded-5">
+              <h3>Cozy Hoodie</h3>
+              <p>Stay warm and stylish in this cozy hoodie</p>
+              <p class="price">Ksh 299</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/img/denim-jeans.jpeg" alt="jeans" class="w-100 rounded-5">
+
+            <div class="carousel-caption bg-black bg-opacity-50 rounded-5">
+              <h3>Denim Jeans</h3>
+              <p>Look good in these jeans</p>
+              <p class="price">Ksh 399</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/img/t-shirt.jpeg" alt="casual t-shirt" class="w-100 rounded-5">
+
+            <div class="carousel-caption bg-black bg-opacity-50 rounded-5">
+              <h3>T-Shirt</h3>
+              <p>Stay casual in this t-shirt</p>
+              <p class="price">Ksh 199</p>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#clothingCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#clothingCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+    </div>
+  </body>
+</html>
